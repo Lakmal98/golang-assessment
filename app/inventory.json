@@ -1,0 +1,67 @@
+[
+  {
+    "product_id": "PROD-123",
+    "warehouse": "DE-Berlin",
+    "stock_level": 100
+  },
+  {
+    "product_id": "PROD-123",
+    "warehouse": "US-NewYork",
+    "stock_level": 50
+  },
+  {
+    "product_id": "PROD-456",
+    "warehouse": "DE-Berlin",
+    "stock_level": 25
+  },
+  {
+    "product_id": "PROD-456",
+    "warehouse": "US-NewYork",
+    "stock_level": 75
+  },
+  {
+    "product_id": "PROD-789",
+    "warehouse": "DE-Berlin",
+    "stock_level": 0
+  },
+  {
+    "product_id": "PROD-789",
+    "warehouse": "US-NewYork",
+    "stock_level": 15
+  },
+  {
+    "product_id": "PROD-101",
+    "warehouse": "DE-Berlin",
+    "stock_level": 10
+  },
+  {
+    "product_id": "PROD-101",
+    "warehouse": "US-NewYork",
+    "stock_level": 11
+  },
+  {
+    "product_id": "PROD-202",
+    "warehouse": "DE-Berlin",
+    "stock_level": 1
+  },
+  {
+    "product_id": "PROD-202",
+    "warehouse": "UK-London",
+    "stock_level": 500
+  },
+  {
+    "product_id": "PROD-303",
+    "warehouse": "UK-London",
+    "stock_level": 20
+  },
+  {
+    "product_id": "PROD-404",
+    "warehouse": "DE-Berlin",
+    "stock_level": 200
+  },
+  {
+    "product_id": "PROD-505",
+    "warehouse": "US-NewYork",
+    "stock_level": 5
+  }
+]

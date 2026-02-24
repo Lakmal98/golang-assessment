@@ -1,0 +1,33 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: product-availability-api
+    ports:
+      - "8080:8080"
+    environment:
+      - GO_ENV=development
+    volumes:
+      # Mount source code for development
+      - ./app:/root/app
+    restart: unless-stopped
+    
+    # Docker Compose Watch mode for hot reload during development
+    develop:
+      watch:
+        # Sync source files and rebuild on changes
+        - action: rebuild
+          path: ./app
+          target: /build
+          ignore:
+            - app/**/*_test.go
+        
+        # Sync inventory.json without rebuild
+        - action: sync
+          path: ./app/inventory.json
+          target: /root/inventory.json
+
+networks:
+  default:
+    name: product-api-network
